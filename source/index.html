@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -22,17 +23,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="index.html">
+            <a class="main-nav__link" href="index.html">
               главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__link" href="catalog.html">
               каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">
+            <a class="main-nav__link" href="form.html">
               подбор программы
             </a>
           </li>
@@ -48,10 +49,10 @@
         <h2 class="to-form__title">Функциональное<br>
           питание для котов</h2>
         <p class="to-form__subtitle">Занялся собой? Займись котом!</p>
-        <img class="to-form__image" src="img/container-food.jpg" width="552" height="499"
+        <img class="to-form__image" src="img/container-food.png" width="552" height="499"
           alt="Упаковка корма с логотипом Кэт Энерджи.">
       </div>
-      <a class="to-form__link">подобрать программу</a>
+      <a class="to-form__link" href="form.html">подобрать программу</a>
     </section>
 
     <section class="results results--slimming">
@@ -103,15 +104,15 @@
           привычек и по-прежнему спит по 16 часов в день. </p>
         <ul class="case__list">
           <li class="case__item">
-            <span class="case__item-weight">5 кг</span>
+            <span class="case__number">5 кг</span>
             <span class="case__item-description">снижение веса</span>
           </li>
           <li class="case__item">
             <span class="case__number">60 ДНЕЙ</span>
-            <span class="case__description">затрачено времени</span>
+            <span class="case__item-description">затрачено времени</span>
           </li>
-          <li class="case__description">Затраты на питание:
-            <span class="case__number">15 000 РУБ.</span>
+          <li class="case__item-cost">Затраты на питание:
+            <span class="case__item-cost">15 000 РУБ.</span>
           </li>
         </ul>
       </div>
@@ -120,9 +121,9 @@
           alt="Похудевший кот.">
         <img class="case__image case__image--fat-cat" src="img/cat-fat.png" alt="Толстый кот.">
         <div class="case__range">
-          <button class="case__for" type="button">было</button>
+          <button class="case__scale-text" type="button">было</button>
           <div class="case__scale case__scale--mobail"></div>
-          <button class="case__after" type="button">стало</button>
+          <button class="case__scale-text" type="button">стало</button>
         </div>
       </div>
     </section>
@@ -138,7 +139,7 @@
       </div>
       <div class="main-footer__map-image map"><iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716319492!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sru!2sru!4v1648999338487!5m2!1sru!2sru"
-          width="1440" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          width="1440" height="600" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>

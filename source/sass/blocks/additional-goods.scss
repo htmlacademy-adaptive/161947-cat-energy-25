@@ -1,0 +1,31 @@
+.additional-goods__title {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.additional-goods__goods-name {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-dark;
+  text-transform: uppercase;
+}
+
+.additional-goods__goods-description {
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-grey;
+}
+
+.additional-goods__order-link {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $btn-color;
+}

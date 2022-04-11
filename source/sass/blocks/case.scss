@@ -1,0 +1,50 @@
+.case__list {
+  list-style: none;
+}
+
+.case__title {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.case__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-grey;
+}
+
+.case__item-description {
+  font-size: 12px;
+  line-height: 12px;
+  color: $text-grey;
+}
+
+.case__item-cost {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.case__number {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.case__scale-text {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}

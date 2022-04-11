@@ -1,0 +1,63 @@
+.form-diet__about-cat,
+.form-diet__goal,
+.form-diet__contacts-owner,
+.form-diet__comment,
+.form-diet__add-info {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form-diet__title-main {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.form-diet__description {
+  font-family: $oswald;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.form-diet__about-cat,
+.form-diet__input,
+.form-diet__contacts-owner,
+.form-diet__control-label,
+.form-diet__comment-text {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-grey;
+  text-transform: uppercase;
+}
+
+.form-diet__title {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 26px;
+  color: $text-black;
+}
+
+.form-diet__control-label,
+.form-diet__comment-text {
+  color: $text-black;
+}
+
+.form-diet__submit {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-white;
+  text-align: center;
+  background-color: $btn-color;
+  border: none;
+}
+
+.form-diet__footnote {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
