@@ -1,11 +1,25 @@
-.form-diet__about-cat,
-.form-diet__goal,
-.form-diet__contacts-owner,
-.form-diet__comment,
-.form-diet__add-info {
-  margin: 0;
-  padding: 0;
+.form-diet__field {
   border: none;
+}
+
+.form-diet__base-text {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-grey;
+  text-transform: uppercase;
+
+  &--control-label {
+    color: #111111;
+  }
+
+  &--add-gods {
+    color: #000000;
+  }
+}
+
+.form-diet__base-text::placeholder {
+  color: $text-grey;
 }
 
 .form-diet__title-main {
@@ -19,18 +33,6 @@
 .form-diet__description {
   font-family: $oswald;
   font-weight: 400;
-  text-transform: uppercase;
-}
-
-.form-diet__about-cat,
-.form-diet__input,
-.form-diet__contacts-owner,
-.form-diet__control-label,
-.form-diet__comment-text {
-  font-family: $oswald;
-  font-size: 16px;
-  line-height: 18px;
-  color: $text-grey;
   text-transform: uppercase;
 }
 

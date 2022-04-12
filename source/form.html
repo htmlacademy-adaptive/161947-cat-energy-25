@@ -48,49 +48,49 @@
       <p class="form-diet__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form-diet__form" action="https://echo.htmlacademy.ru/courses" method="post">
 
-        <fieldset class="form-diet__about-cat">
-          <label for="input-name-cat">ИМЯ:<sup>*</sup></label>
-          <input class="form-diet__input" type="text" name="name-cat" id="input-name-cat" value="барсик">
+        <fieldset class="form-diet__field">
+          <label class="form-diet__base-text" for="input-name-cat">ИМЯ:<sup>*</sup></label>
+          <input class="form-diet__base-text" type="text" name="name-cat" id="input-name-cat" value="барсик">
 
-          <label for="input-weight-cat">Вес (кг):<sup>*</sup></label>
-          <input class="form-diet__input" type="text" name="weight-cat" id="input-weight-cat" value="7">
+          <label class="form-diet__base-text" for="input-weight-cat">Вес (кг):<sup>*</sup></label>
+          <input class="form-diet__base-text" type="text" name="weight-cat" id="input-weight-cat" value="7">
 
-          <label for="input-old-cat">Возраст (лет):</label>
-          <input class="form-diet__input" type="text" name="old-cat" id="input-old-cat" value="7">
+          <label class="form-diet__base-text" for="input-old-cat">Возраст (лет):</label>
+          <input class="form-diet__base-text" type="text" name="old-cat" id="input-old-cat" value="7">
         </fieldset>
 
-        <fieldset class="form-diet__goal">
+        <fieldset class="form-diet__field">
           <ul class="form-diet__list-goal">
             <li class="form-diet__item-radio">
               <label class="form-diet__control-radio">
                 <input class="visually-hidden form-diet__control-input" type="radio" name="goal" value="weight-loss"
                   checked>
                 <span class="form-diet__control-mark"></span>
-                <span class="form-diet__control-label">похудение</span>
+                <span class="form-diet__base-text form-diet__base-text--control-label">похудение</span>
               </label>
             </li>
             <li class="form-diet__item-radio">
               <label class="form-diet__control-radio">
                 <input class="visually-hidden form-diet__control-input" type="radio" name="goal" value="mass-gain">
                 <span class="form-diet__control-mark"></span>
-                <span class="form-diet__control-label">набор массы</span>
+                <span class="form-diet__base-text form-diet__base-text--control-label">набор массы</span>
               </label>
             </li>
             <li class="form-diet__item-radio">
               <label class="form-diet__control-radio">
                 <input class="visually-hidden form-diet__control-input" type="radio" name="goal" value="unknown">
                 <span class="form-diet__control-mark"></span>
-                <span class="form-diet__control-label">не знаю (Нужен ваш совет)</span>
+                <span class="form-diet__base-text form-diet__base-text--control-label">не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form-diet__contacts-owner">
+        <fieldset class="form-diet__field">
           <legend class="form-diet__title">Контактные данные (владельца кота)</legend>
           <div class="form-diet__input-wrapper">
-            <label class="form-diet__label" for="input-email">E-mail:<sup>*</sup></label>
-            <input class="form-diet__input" type="email" name="email" id="input-email" placeholder="кuklachev@gmail.com"
+            <label class="form-diet__base-text" for="input-email">E-mail:<sup>*</sup></label>
+            <input class="form-diet__base-text" type="email" name="email" id="input-email" placeholder="кuklachev@gmail.com"
               required>
             <svg class="form-diet__icon" width="19" height="14" viewBox="0 0 19 14" fill="currentcolor"
               xmlns="http://www.w3.org/2000/svg">
@@ -99,8 +99,8 @@
             </svg>
           </div>
           <div class="form-diet__input-wrapper">
-            <label class="form-diet__label" for="input-phone">Телефон:<sup>*</sup></label>
-            <input class="form-diet__input" type="tel" name="phone" id="input-phone" placeholder="8 (960) 900-60-90"
+            <label class="form-diet__base-text" for="input-phone">Телефон:<sup>*</sup></label>
+            <input class="form-diet__base-text" type="tel" name="phone" id="input-phone" placeholder="8 (960) 900-60-90"
               required>
             <svg class="form-diet__icon" width="20" height="20" viewBox="0 0 20 20" fill="currentcolor"
               xmlns="http://www.w3.org/2000/svg">
@@ -112,12 +112,12 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-diet__comment">
+        <fieldset class="form-diet__field">
           <legend class="form-diet__title">Комментарий</legend>
-          <textarea class="form-diet__comment-text" name="comment" id="comment-field" cols="70" rows="5">Расскажите обо всех повадках кота</textarea>
+          <textarea class="form-diet__base-text" name="comment" id="comment-field" cols="70" rows="5">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
-        <fieldset class="form-diet__add-info">
+        <fieldset class="form-diet__field">
           <legend class="form-diet__title">Дополнительно</legend>
           <ul class="form-diet__list-checkbox">
             <li class="form-diet__item-checkbox">
@@ -126,7 +126,7 @@
                   value="sweetener" checked>
                 <span class="form-diet__control-mark">
                 </span>
-                <span class="form-diet__control-label">
+                <span class="form-diet__base-text form-diet__base-text--add-gods">
                   сахарозаменитель
                 </span>
               </label>
@@ -136,7 +136,7 @@
                 <input class="form-diet__control-input visually-hidden" type="checkbox" name="water" value="water">
                 <span class="form-diet__control-mark">
                 </span>
-                <span class="form-diet__control-label">
+                <span class="form-diet__base-text form-diet__base-text--add-gods">
                   питьевая вода
                 </span>
               </label>
@@ -146,7 +146,7 @@
                 <input class="form-diet__control-input visually-hidden" type="checkbox" name="milk" value="milk">
                 <span class="form-diet__control-mark">
                 </span>
-                <span class="form-diet__control-label">
+                <span class="form-diet__base-text form-diet__base-text--add-gods">
                   молоко
                 </span>
               </label>
@@ -157,7 +157,7 @@
                   value="vitamins">
                 <span class="form-diet__control-mark">
                 </span>
-                <span class="form-diet__control-label">
+                <span class="form-diet__base-text form-diet__base-text--add-gods">
                   витамины
                 </span>
               </label>
@@ -181,7 +181,7 @@
       </div>
       <div class="main-footer__map-image map"><iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716319492!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sru!2sru!4v1648999338487!5m2!1sru!2sru"
-          width="1440" height="600" allowfullscreen="" loading="lazy"
+          width="320" height="362" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>

@@ -4,8 +4,11 @@
   line-height: 20px;
   font-weight: 400;
   color: $text-dark;
-  text-align: center;
   text-transform: uppercase;
+
+  &--show-more {
+    color: #111111;
+  }
 }
 
 .card__food-description,
@@ -21,6 +24,7 @@
   line-height: 20px;
   color: $text-white;
   text-align: center;
+  text-transform: uppercase;
   background-color: $btn-color;
 }
 
@@ -30,4 +34,5 @@
   line-height: 20px;
   color: $text-grey;
   text-align: center;
+  text-transform: uppercase;
 }
