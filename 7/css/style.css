@@ -2,14 +2,14 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/oswaldregular.woff2") format("woff2"), url("/fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("/fonts/oswaldmedium.woff2") format("woff2"), url("/fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
 *,
@@ -96,8 +96,10 @@ a {
   line-height: 20px;
   font-weight: 400;
   color: #222222;
-  text-align: center;
   text-transform: uppercase;
+}
+.card__title--show-more {
+  color: #111111;
 }
 
 .card__food-description,
@@ -113,6 +115,7 @@ a {
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+  text-transform: uppercase;
   background-color: #68b738;
 }
 
@@ -122,6 +125,7 @@ a {
   line-height: 20px;
   color: #444444;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .case__list {
@@ -137,8 +141,6 @@ a {
 }
 
 .case__description {
-  font-size: 16px;
-  line-height: 24px;
   color: #444444;
 }
 
@@ -195,14 +197,26 @@ a {
   color: #444444;
 }
 
-.form-diet__about-cat,
-.form-diet__goal,
-.form-diet__contacts-owner,
-.form-diet__comment,
-.form-diet__add-info {
-  margin: 0;
-  padding: 0;
+.form-diet__field {
   border: none;
+}
+
+.form-diet__base-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+.form-diet__base-text--control-label {
+  color: #111111;
+}
+.form-diet__base-text--add-gods {
+  color: #000000;
+}
+
+.form-diet__base-text::placeholder {
+  color: #444444;
 }
 
 .form-diet__title-main {
@@ -216,18 +230,6 @@ a {
 .form-diet__description {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  text-transform: uppercase;
-}
-
-.form-diet__about-cat,
-.form-diet__input,
-.form-diet__contacts-owner,
-.form-diet__control-label,
-.form-diet__comment-text {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
   text-transform: uppercase;
 }
 
@@ -263,17 +265,23 @@ a {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  color: #111111;
   text-transform: uppercase;
 }
 
 .main-footer__adress {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
+  color: #444444;
 }
 
 .main-footer__map-image {
   border: 0;
   min-width: 100vh;
+}
+
+.contacts__icon {
+  color: #111111;
 }
 
 .main-header {
@@ -291,6 +299,7 @@ a {
   font-weight: 500;
   color: #000000;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .order-all__text {
@@ -312,7 +321,6 @@ a {
 
 .results__description {
   color: #444444;
-  text-align: center;
 }
 
 .results__link {
