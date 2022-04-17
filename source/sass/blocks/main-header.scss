@@ -1,4 +1,22 @@
-.main-header {
-  background-color: #dfc3c3;
+.main-header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+  .main-header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
