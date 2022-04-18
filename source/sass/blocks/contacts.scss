@@ -1,2 +1,23 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
 
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
+.social__list {
+  list-style: none;
+  display: flex;
+}
+
+.contacts__logo-catenergy {
+  padding: 39px 0 32px 0;
+}

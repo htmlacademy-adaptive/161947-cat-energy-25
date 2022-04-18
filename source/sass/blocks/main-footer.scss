@@ -12,11 +12,44 @@
   color: $text-grey;
 }
 
-.main-footer__map-image {
+.main-footer__iframe {
+  text-align: center;
   border: 0;
-  min-width: 100vh;
+  width: 100%;
 }
 
 .contacts__icon {
   color: #111111;
+}
+
+.main-footer__adress-info {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__adress-info {
+    padding: 56px 70px;
+  }
+
+  .main-footer__iframe {
+    height: 400px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-footer__map {
+    position: relative;
+  }
+
+  .main-footer__adress-info {
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    height: 198px;
+  }
 }
