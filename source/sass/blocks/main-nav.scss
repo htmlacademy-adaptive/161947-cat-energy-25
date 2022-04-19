@@ -1,4 +1,6 @@
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -10,5 +12,29 @@
   color: $text-black;
   text-align: center;
   text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  background-color: #f7403a;
+}
+
+.main-nav {
+  outline: 2px solid #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 440px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 480px;
+  }
 }
 
