@@ -26,7 +26,7 @@
 
 .results {
   min-width: 280px;
-  height: 266px;
+  min-height: 266px;
   background-color: #f2f2f2;
   outline: 1px solid #df6666;
 }
@@ -34,7 +34,7 @@
 
 @media (min-width: $tablet-width) {
   .results {
-    height: 372px;
+    min-height: 372px;
   }
 }
 
@@ -46,7 +46,7 @@
 
   .results {
     width: 570px;
-    height: 374px;
+    min-height: 374px;
   }
 }
 
