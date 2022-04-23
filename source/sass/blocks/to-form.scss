@@ -1,5 +1,4 @@
 .to-form {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -7,6 +6,7 @@
 }
 
 .to-form__wrapper-text {
+  position: relative;
   min-height: 490px;
   padding: 30px;
 }
@@ -56,8 +56,8 @@
 
   .to-form__image {
     position: absolute;
-    margin-top: 80px;
-    margin-left: 108px;
+    bottom: 20;
+    left: 100;
   }
 
   .to-form__link {
