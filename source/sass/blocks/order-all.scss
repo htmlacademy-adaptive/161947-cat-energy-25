@@ -1,7 +1,22 @@
+.order-all {
+  height: 289px;
+  padding: 48px 66px 43px 58px;
+  background-color: $btn-color;
+  margin-bottom: 50px;
+}
+
 .order-all__text {
   font-family: $arial;
   font-size: 16px;
   line-height: 20px;
   color: $text-white;
-  background-color: $btn-color;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .order-all {
+    width: 245px;
+    float: right;
+    padding: 75px 40px;
+  }
 }

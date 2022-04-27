@@ -1,7 +1,32 @@
 .catalog__title {
+  margin: 30px 0 49px 0;
   font-family: $oswald;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   text-align: center;
+}
+
+.catalog__wrapper {
+  list-style: none;
+  padding: 0;
+  background-color: #adc9a2;
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    column-gap: 60px;
+    row-gap: 142px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    grid-template-columns: 245px 245px 245px 245px;
+    column-gap: 80px;
+    row-gap: 144px;
+  }
 }
