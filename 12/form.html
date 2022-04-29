@@ -46,151 +46,174 @@
     </div>
   </header>
 
-  <main class="main-container container">
+  <main class="main-container">
     <section class="form-diet">
-      <h1 class="form-diet__title-main">Подбор программы</h1>
-      <p class="form-diet__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <div class="form-diet__wrapper container">
+        <h1 class="form-diet__title-main">Подбор программы</h1>
+        <p class="form-diet__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
       <form class="form-diet__form" action="https://echo.htmlacademy.ru/courses" method="post">
-
-        <fieldset class="form-diet__field form-diet__field-small form-diet__field-small--radio">
-          <label class="form-diet__base-text form-diet__label" for="input-name-cat">
-            <span class="form-diet__label-field">ИМЯ:<sup>*</sup>
-            </span>
-            <input class="form-diet__base-text form-diet__base-text-input" type="text" name="name-cat"
-              id="input-name-cat" value="барсик">
-          </label>
-
-          <label class="form-diet__base-text form-diet__label" for="input-weight-cat">
-            <span class="form-diet__label-field">Вес (кг):<sup>*</sup></span>
-            <input class="form-diet__base-text form-diet__base-text-input" type="text" name="weight-cat"
-              id="input-weight-cat" value="7">
-          </label>
-
-          <label class="form-diet__base-text form-diet__label" for="input-old-cat"><span
-              class="form-diet__label-field">Возраст (лет):</span>
-            <input class="form-diet__base-text form-diet__base-text-input" type="text" name="old-cat" id="input-old-cat"
-              value="7">
-          </label>
-        </fieldset>
-
-        <fieldset class="form-diet__field form-diet__field-small">
-          <ul class="form-diet__list form-diet__list-goal">
-            <li class="form-diet__list-item">
-              <label class="form-diet__control-item">
-                <input class="visually-hidden form-diet__control-input" type="radio" name="goal" value="weight-loss"
-                  checked>
-                <span class="form-diet__control-mark"></span>
-                <span class="form-diet__base-text form-diet__base-text--control-label">похудение</span>
-              </label>
-            </li>
-            <li class="form-diet__list-item">
-              <label class="form-diet__control-item">
-                <input class="visually-hidden form-diet__control-input" type="radio" name="goal" value="mass-gain">
-                <span class="form-diet__control-mark"></span>
-                <span class="form-diet__base-text form-diet__base-text--control-label">набор массы</span>
-              </label>
-            </li>
-            <li class="form-diet__list-item">
-              <label class="form-diet__control-item">
-                <input class="visually-hidden form-diet__control-input" type="radio" name="goal" value="unknown">
-                <span class="form-diet__control-mark"></span>
-                <span class="form-diet__base-text form-diet__base-text--control-label">не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="form-diet__field">
-          <legend class="form-diet__title">Контактные данные (владельца кота)</legend>
-
-          <div class="form-diet__input-wrapper">
-            <label class="form-diet__base-text form-diet__label" for="input-email">
-              <span class="form-diet__label-field">E-mail:<sup>*</sup>
+        <div class="form-diet__wrapper container">
+          <fieldset class="form-diet__field form-diet__field-small form-diet__field-small--radio">
+            <label class="form-diet__base-text form-diet__label" for="input-name-cat">
+              <span class="form-diet__label-field">ИМЯ:<sup>*</sup>
               </span>
-              <input class="form-diet__base-text form-diet__base-text-input" type="email" name="email" id="input-email"
-                placeholder="кuklachev@gmail.com" required>
+              <input class="form-diet__base-text form-diet__base-text-input" type="text" name="name-cat"
+                id="input-name-cat" value="барсик">
             </label>
-            <svg class="form-diet__icon visually-hidden" width="19" height="14" viewBox="0 0 19 14" fill="currentcolor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke="#222" stroke-width="1.3"
-                d="M1.19 6v8M18.19 6v8M.54 13.35h18M.54 1.35h18M17.89 3.18l-8.35 6.5-8.35-6.5V1.65h16.7v1.53Z" />
-            </svg>
-          </div>
 
-          <div class="form-diet__input-wrapper">
-            <label class="form-diet__base-text form-diet__label" for="input-phone">
-              <span class="form-diet__label-field">Телефон:<sup>*</sup>
-              </span>
-              <input class="form-diet__base-text form-diet__base-text-input" type="tel" name="phone" id="input-phone"
-                placeholder="8 (960) 900-60-90" required>
+            <label class="form-diet__base-text form-diet__label" for="input-weight-cat">
+              <span class="form-diet__label-field">Вес (кг):<sup>*</sup></span>
+              <input class="form-diet__base-text form-diet__base-text-input" type="text" name="weight-cat"
+                id="input-weight-cat" value="7">
             </label>
-            <svg class="form-diet__icon visually-hidden" width="20" height="20" viewBox="0 0 20 20" fill="currentcolor"
-              xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#a)" fill="#000">
-                <path
-                  d="M17.76 9.4H9.62v1.2h8.14l-2.01 2.1.86.9 2.97-3.1a.77.77 0 0 0 0-.9L16.6 6.5l-.86.9 2 2ZM8.37 19.4v-6.2a.66.66 0 0 0-.18-.41.61.61 0 0 0-.4-.19H3.6c0 .32.12.62.34.84.21.23.5.35.8.36h2.4v5H3.59a1.65 1.65 0 0 1-1.25-.45 1.79 1.79 0 0 1-.57-1.25v-14c-.01-.46.16-.91.46-1.25.3-.33.72-.53 1.17-.55h3.73v5h-2.3c-.3 0-.6.13-.8.36-.22.22-.34.52-.35.84H7.9a.61.61 0 0 0 .4-.19c.1-.1.17-.25.18-.41V.6a.86.86 0 0 0-.25-.4.8.8 0 0 0-.42-.2H3.59a2.76 2.76 0 0 0-2.06.8 3 3 0 0 0-.91 2.1v13.9a3 3 0 0 0 .74 2.18 2.77 2.77 0 0 0 2.04.92h4.4a.46.46 0 0 0 .4-.1.5.5 0 0 0 .17-.4Z" />
-              </g>
-            </svg>
-          </div>
 
+            <label class="form-diet__base-text form-diet__label" for="input-old-cat"><span
+                class="form-diet__label-field">Возраст (лет):</span>
+              <input class="form-diet__base-text form-diet__base-text-input" type="text" name="old-cat"
+                id="input-old-cat" value="7">
+            </label>
+          </fieldset>
+
+          <fieldset class="form-diet__field form-diet__field-small">
+            <ul class="form-diet__list form-diet__list-goal">
+              <li class="form-diet__list-item form-diet__list-item-goal">
+                <label class="form-diet__control-item">
+                  <input class="visually-hidden form-diet__control-input" type="radio" name="goal" value="weight-loss"
+                    checked>
+                  <span class="form-diet__control-mark"></span>
+                  <span class="form-diet__base-text form-diet__base-text--control-label">похудение</span>
+                </label>
+              </li>
+              <li class="form-diet__list-item form-diet__list-item-goal">
+                <label class="form-diet__control-item">
+                  <input class="visually-hidden form-diet__control-input" type="radio" name="goal" value="mass-gain">
+                  <span class="form-diet__control-mark"></span>
+                  <span class="form-diet__base-text form-diet__base-text--control-label">набор массы</span>
+                </label>
+              </li>
+              <li class="form-diet__list-item form-diet__list-item-goal">
+                <label class="form-diet__control-item">
+                  <input class="visually-hidden form-diet__control-input" type="radio" name="goal" value="unknown">
+                  <span class="form-diet__control-mark"></span>
+                  <span class="form-diet__base-text form-diet__base-text--control-label">не знаю (Нужен ваш
+                    совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+
+
+        <fieldset class="form-diet__field">
+          <div class="form-diet__title-wrapper">
+            <div class="container">
+              <legend class="form-diet__title">Контактные данные (владельца кота)</legend>
+            </div>
+          </div>
+          <div class="form-diet__wrapper container">
+            <div class="form-diet__input-wrapper">
+              <label class="form-diet__base-text form-diet__label" for="input-email">
+                <span class="form-diet__label-field">E-mail:<sup>*</sup>
+                </span>
+                <input class="form-diet__base-text form-diet__base-text-input" type="email" name="email"
+                  id="input-email" placeholder="кuklachev@gmail.com" required>
+              </label>
+              <svg class="form-diet__icon visually-hidden" width="19" height="14" viewBox="0 0 19 14"
+                fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#222" stroke-width="1.3"
+                  d="M1.19 6v8M18.19 6v8M.54 13.35h18M.54 1.35h18M17.89 3.18l-8.35 6.5-8.35-6.5V1.65h16.7v1.53Z" />
+              </svg>
+            </div>
+            <div class="form-diet__input-wrapper">
+              <label class="form-diet__base-text form-diet__label" for="input-phone">
+                <span class="form-diet__label-field">Телефон:<sup>*</sup>
+                </span>
+                <input class="form-diet__base-text form-diet__base-text-input" type="tel" name="phone" id="input-phone"
+                  placeholder="8 (960) 900-60-90" required>
+              </label>
+              <svg class="form-diet__icon visually-hidden" width="20" height="20" viewBox="0 0 20 20"
+                fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)" fill="#000">
+                  <path
+                    d="M17.76 9.4H9.62v1.2h8.14l-2.01 2.1.86.9 2.97-3.1a.77.77 0 0 0 0-.9L16.6 6.5l-.86.9 2 2ZM8.37 19.4v-6.2a.66.66 0 0 0-.18-.41.61.61 0 0 0-.4-.19H3.6c0 .32.12.62.34.84.21.23.5.35.8.36h2.4v5H3.59a1.65 1.65 0 0 1-1.25-.45 1.79 1.79 0 0 1-.57-1.25v-14c-.01-.46.16-.91.46-1.25.3-.33.72-.53 1.17-.55h3.73v5h-2.3c-.3 0-.6.13-.8.36-.22.22-.34.52-.35.84H7.9a.61.61 0 0 0 .4-.19c.1-.1.17-.25.18-.41V.6a.86.86 0 0 0-.25-.4.8.8 0 0 0-.42-.2H3.59a2.76 2.76 0 0 0-2.06.8 3 3 0 0 0-.91 2.1v13.9a3 3 0 0 0 .74 2.18 2.77 2.77 0 0 0 2.04.92h4.4a.46.46 0 0 0 .4-.1.5.5 0 0 0 .17-.4Z" />
+                </g>
+              </svg>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset class="form-diet__field">
-          <legend class="form-diet__title">Комментарий</legend>
-          <textarea class="form-diet__base-text form-diet__comment-field" name="comment"
-            id="comment-field">Расскажите обо всех повадках кота</textarea>
+          <div class="form-diet__title-wrapper">
+            <div class="container">
+              <legend class="form-diet__title">Комментарий</legend>
+            </div>
+          </div>
+          <div class="form-diet__wrapper container">
+            <textarea class="form-diet__base-text form-diet__comment-field" name="comment"
+              id="comment-field">Расскажите обо всех повадках кота</textarea>
+          </div>
         </fieldset>
 
         <fieldset class="form-diet__field">
-          <legend class="form-diet__title">Дополнительно</legend>
-          <ul class="form-diet__list form-diet__list-goods">
-            <li class="form-diet__list-item">
-              <label class="form-diet__label">
-                <input class="form-diet__control-input visually-hidden" type="checkbox" name="sweetener"
-                  value="sweetener" checked>
-                <span class="form-diet__control-mark">
-                </span>
-                <span class="form-diet__base-text form-diet__base-text--add-gods">
-                  сахарозаменитель
-                </span>
-              </label>
-            </li>
-            <li class="form-diet__list-item">
-              <label class="form-diet__control-checkbox form-diet__label">
-                <input class="form-diet__control-input visually-hidden" type="checkbox" name="water" value="water">
-                <span class="form-diet__control-mark">
-                </span>
-                <span class="form-diet__base-text form-diet__base-text--add-gods">
-                  питьевая вода
-                </span>
-              </label>
-            </li>
-            <li class="form-diet__list-item">
-              <label class="form-diet__control-checkbox form-diet__label">
-                <input class="form-diet__control-input visually-hidden" type="checkbox" name="milk" value="milk">
-                <span class="form-diet__control-mark">
-                </span>
-                <span class="form-diet__base-text form-diet__base-text--add-gods">
-                  молоко
-                </span>
-              </label>
-            </li>
-            <li class="form-diet__list-item">
-              <label class="form-diet__control-checkbox">
-                <input class="form-diet__control-input visually-hidden" type="checkbox" name="vitamins"
-                  value="vitamins">
-                <span class="form-diet__control-mark">
-                </span>
-                <span class="form-diet__base-text form-diet__base-text--add-gods">
-                  витамины
-                </span>
-              </label>
-            </li>
-          </ul>
+          <div class="form-diet__title-wrapper">
+            <div class="container">
+              <legend class="form-diet__title">Дополнительно</legend>
+            </div>
+          </div>
+          <div class="form-diet__wrapper container">
+            <ul class="form-diet__list form-diet__list-goods">
+              <li class="form-diet__list-item form-diet__list-item-goods">
+                <label class="form-diet__label">
+                  <input class="form-diet__control-input visually-hidden" type="checkbox" name="sweetener"
+                    value="sweetener" checked>
+                  <span class="form-diet__control-mark">
+                  </span>
+                  <span class="form-diet__base-text form-diet__base-text--add-gods">
+                    сахарозаменитель
+                  </span>
+                </label>
+              </li>
+              <li class="form-diet__list-item form-diet__list-item-goods">
+                <label class="form-diet__control-checkbox form-diet__label">
+                  <input class="form-diet__control-input visually-hidden" type="checkbox" name="water" value="water">
+                  <span class="form-diet__control-mark">
+                  </span>
+                  <span class="form-diet__base-text form-diet__base-text--add-gods">
+                    питьевая вода
+                  </span>
+                </label>
+              </li>
+              <li class="form-diet__list-item form-diet__list-item-goods">
+                <label class="form-diet__control-checkbox form-diet__label">
+                  <input class="form-diet__control-input visually-hidden" type="checkbox" name="milk" value="milk">
+                  <span class="form-diet__control-mark">
+                  </span>
+                  <span class="form-diet__base-text form-diet__base-text--add-gods">
+                    молоко
+                  </span>
+                </label>
+              </li>
+              <li class="form-diet__list-item form-diet__list-item-goods">
+                <label class="form-diet__control-checkbox">
+                  <input class="form-diet__control-input visually-hidden" type="checkbox" name="vitamins"
+                    value="vitamins">
+                  <span class="form-diet__control-mark">
+                  </span>
+                  <span class="form-diet__base-text form-diet__base-text--add-gods">
+                    витамины
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <div class="form-diet__submit-field">
-          <button class="form-diet__submit" type="submit">отправить заявку</button>
-          <p class="form-diet__footnote">* — Обязательные поля</p>
+        <div class="form-diet__wrapper container">
+          <div class="form-diet__submit-field">
+            <button class="form-diet__submit" type="submit">отправить заявку</button>
+            <p class="form-diet__footnote">* — Обязательные поля</p>
+          </div>
       </form>
     </section>
   </main>
