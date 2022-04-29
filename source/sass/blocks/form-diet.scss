@@ -113,7 +113,6 @@
 
 @media (min-width: $tablet-width) {
   .form-diet {
-    width: 630px;
     margin: 0 auto 72px auto;
   }
 
@@ -153,7 +152,6 @@
 
 @media (min-width: $desktop-width) {
   .form-diet {
-    width: 1220px;
     margin-bottom: 82px;
   }
 
@@ -163,24 +161,21 @@
     width: 568px;
   }
 
-  .form-diet__field:nth-child(3) {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .form-diet__input-wrapper {
     width: 569px;
   }
 
   .form-diet__list-goods {
     display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 0;
   }
 
-  .form-diet__list-item {
+  .form-diet__list-item-goods {
     width: 221px;
   }
 
-  .form-diet__list-item:not(:last-child) {
+  .form-diet__list-item-goods:not(:last-child) {
     margin-right: 104px;
   }
 
@@ -188,4 +183,8 @@
     width: 568px;
     margin-right: 81px;
   }
+}
+
+.form-diet__control-item {
+  padding: 5px;
 }
