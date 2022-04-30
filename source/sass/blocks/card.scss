@@ -19,6 +19,11 @@
 }
 
 .card__order-link {
+  width: 280px;
+  height: 40px;
+  margin: 14px 0;
+  padding: 10px;
+  box-sizing: border-box;
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
@@ -35,4 +40,46 @@
   color: $text-grey;
   text-align: center;
   text-transform: uppercase;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 190px;
+  outline: 1px solid #111111;
+
+  &--show-more {
+    text-align: center;
+  }
+}
+
+.card__image {
+  display: block;
+  width: 68px;
+  margin: 14px 36px;
+
+  & .big-size {
+    width: 86px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 324px;
+    min-height: 429px;
+  }
+
+  .card__order-link {
+    width: 248px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 245px;
+  }
 }

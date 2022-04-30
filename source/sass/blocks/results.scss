@@ -20,11 +20,11 @@
   text-transform: uppercase;
 }
 
-.results__wrapper {
+.results {
   margin: 0 auto;
 }
 
-.results {
+.results__block {
   min-width: 280px;
   min-height: 266px;
   background-color: #f2f2f2;
@@ -33,7 +33,7 @@
 
 
 @media (min-width: $tablet-width) {
-  .results {
+  .results__block {
     min-height: 372px;
   }
 }
@@ -44,7 +44,7 @@
     justify-content: space-between;
   }
 
-  .results {
+  .results__block {
     width: 570px;
     min-height: 374px;
   }
