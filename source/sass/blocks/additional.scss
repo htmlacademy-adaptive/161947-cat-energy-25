@@ -15,7 +15,11 @@
 
 @media (min-width: $desktop-width) {
   .additional__list {
-    float: left;
     margin-right: 78px;
+  }
+
+  .additional__inner-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }

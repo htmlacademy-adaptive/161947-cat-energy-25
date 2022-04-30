@@ -59,6 +59,7 @@
   font-family: $oswald;
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
   color: $text-black;
 }
 
@@ -155,10 +156,28 @@
     margin-bottom: 82px;
   }
 
-  .form-diet__field-small:first-child {
-    float: left;
-    margin-right: 80px;
+  .form-diet__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-diet__field-small {
     width: 568px;
+  }
+
+  .form-diet__field-small:nth-child(2) {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .form-diet__wrapper-title-main {
+    flex-direction: column;
+  }
+
+  .form-diet__description {
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .form-diet__input-wrapper {

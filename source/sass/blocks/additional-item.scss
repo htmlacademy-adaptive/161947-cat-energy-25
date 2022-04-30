@@ -1,6 +1,5 @@
 .additional-item__title {
   grid-column: -1/1;
-  padding: 10px;
   font-family: $oswald;
   font-size: 16px;
   line-height: 16px;
@@ -63,7 +62,6 @@
 
   .additional__item {
     grid-template-columns: 320px 245px 87px 244px;
-    grid-template-rows: 40px;
   }
 
   .additional-item__order-link {
